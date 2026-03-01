@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./assets/extra-files/ocean.jpg);
+}
+
+#page-logo a {
+  text-decoration: none;
+  color: yellow;
+  font-size: xx-large;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-link {
+  color: yellow;
+  text-decoration: none;
+  padding: 12px 10px;
+  display: block;
+}
+
+#hero {
+  background-image: url(./assets/extra-files/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(0, 0, 0, 0.45);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#hero-content h1 {
+  color: white;
+  font-size: 33px;
+}
+
+#hero-content p {
+  color: rgba(240, 248, 255, 0.799);
+}
+
+#hero-content a {
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+#highlights {
+  padding: 60px 8%;
+  background: #cde7e6; /* màu nền xanh nhạt giống hình */
+  text-align: center;
+}
+
+#highlights h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+#destinations {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.destination {
+  width: 400px;
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.destination p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.destination strong {
+  color: #2a9d8f;
+}
+
+footer {
+  background-color: black;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}

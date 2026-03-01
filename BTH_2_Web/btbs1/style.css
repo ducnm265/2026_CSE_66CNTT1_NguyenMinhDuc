@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.my-10px {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 input {
+  width: 47%;
+  padding: 15px;
+}
+
+.box2 {
+  padding: 15px;
+}
+
+.footer {
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(0, 208, 255);
+  color: white;
+}

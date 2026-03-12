@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .low-score {
+        background-color: yellow;
+      }
+      .no-results {
+        text-align: center;
+        color: red;
+        font-weight: bold;
+      }
+      .sort-arrow {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="data-input">
+        <input
+          id="name-input"
+          style="padding: 10px 40px"
+          type="text"
+          placeholder="Họ và tên"
+        />
+        <input
+          id="score-input"
+          style="padding: 10px 40px"
+          type="text"
+          placeholder="Điểm (0-10)"
+        />
+        <p id="error-message" style="color: red"></p>
+      </div>
+      <button onclick="addStudent()" type="submit" class="btn-add">Thêm</button>
+
+      <div class="filters">
+        <input
+          id="filter-input"
+          type="text"
+          placeholder="Tìm kiếm theo tên..."
+        />
+        <select id="rank-filter">
+          <option value="all">Tất cả</option>
+          <option value="Giỏi">Giỏi</option>
+          <option value="Khá">Khá</option>
+          <option value="Trung bình">Trung bình</option>
+          <option value="Yếu">Yếu</option>
+        </select>
+      </div>
+
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th id="score-header">
+              Điểm <span id="sort-arrow" class="sort-arrow"></span>
+            </th>
+            <th>Xếp loại</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be rendered by JS -->
+        </tbody>
+      </table>
+
+      <div id="statistics">
+        <p>Tổng số sinh viên hiển thị: <span id="total-students">0</span></p>
+        <p>Điểm trung bình: <span id="average-score">0</span></p>
+      </div>
+    </div>
+    <script src="/p1/bai1.2/main.js"></script>
+  </body>
+</html>

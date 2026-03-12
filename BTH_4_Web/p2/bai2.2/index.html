@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .container {
+        width: 400px;
+        margin: 40px auto;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+      }
+      input.error {
+        border: 1px solid red;
+      }
+
+      .error {
+        color: red;
+        font-size: 13px;
+      }
+
+      .success {
+        color: green;
+        font-weight: bold;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="order-form">
+      <h2>Form Đặt Hàng</h2>
+      <label>Tên sản phẩm</label>
+      <select id="product">
+        <option value="">-- Chọn sản phẩm --</option>
+        <option value="ao">Áo</option>
+        <option value="quan">Quần</option>
+        <option value="giay">Giày</option>
+      </select>
+      <p class="error" id="product-error"></p>
+      <label>Số lượng</label>
+      <input type="number" id="quantity" />
+      <p class="error" id="quantity-error"></p>
+      <label>Ngày giao hàng</label>
+      <input type="date" id="delivery-date" />
+      <p class="error" id="date-error"></p>
+
+      <label>Địa chỉ giao hàng</label>
+      <input type="text" id="address" />
+      <p class="error" id="address-error"></p>
+
+      <label>Ghi chú</label>
+      <textarea id="note"></textarea>
+      <p class="error" id="note-error"></p>
+      <label>Phương thức thanh toán</label>
+      <input type="radio" name="payment" value="cod" /> COD
+      <input type="radio" name="payment" value="bank" /> Chuyển khoản
+      <input type="radio" name="payment" value="wallet" /> Ví điện tử
+      <p class="error" id="payment-error"></p>
+      <label>Tổng tiền:</label>
+      <div id="total-price"></div>
+
+      <button type="submit">Đặt hàng</button>
+    </form>
+    <p id="success-message" class="success"></p>
+    <script src="/p2/bai2.2/main.js"></script>
+  </body>
+</html>

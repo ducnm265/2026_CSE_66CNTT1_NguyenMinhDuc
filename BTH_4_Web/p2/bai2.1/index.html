@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .container {
+        width: 400px;
+        margin: 40px auto;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+      }
+      input.error {
+        border: 1px solid red;
+      }
+
+      .error {
+        color: red;
+        font-size: 13px;
+      }
+
+      .success {
+        color: green;
+        font-weight: bold;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng ký tài khoản</h2>
+
+      <form id="register-form">
+        <label>Họ và tên</label>
+        <input type="text" id="fullname" />
+        <div class="error" id="fullname-error"></div>
+
+        <label>Email</label>
+        <input type="text" id="email" />
+        <div class="error" id="email-error"></div>
+
+        <label>Số điện thoại</label>
+        <input type="text" id="phone" />
+        <div class="error" id="phone-error"></div>
+
+        <label>Mật khẩu</label>
+        <input type="password" id="password" />
+        <div class="error" id="password-error"></div>
+
+        <label>Xác nhận mật khẩu</label>
+        <input type="password" id="confirm-password" />
+        <div class="error" id="confirm-error"></div>
+
+        <p>Giới tính</p>
+        <input type="radio" name="gender" value="Nam" /> Nam
+        <input type="radio" name="gender" value="Nữ" /> Nữ
+        <div class="error" id="gender-error"></div>
+
+        <br /><br />
+
+        <label>
+          <input type="checkbox" id="terms" />
+          Tôi đồng ý điều khoản
+        </label>
+        <div class="error" id="terms-error"></div>
+
+        <button type="submit">Đăng ký</button>
+      </form>
+
+      <p id="success-message" class="success"></p>
+    </div>
+
+    <script src="/p2/bai2.1/main.js"></script>
+  </body>
+</html>

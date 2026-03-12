@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .low-score {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="data-input">
+        <input
+          id="name-input"
+          style="padding: 10px 40px"
+          type="text"
+          placeholder="Họ và tên"
+        />
+        <input
+          id="score-input"
+          style="padding: 10px 40px"
+          type="text"
+          placeholder="Điểm (0-10)"
+        />
+        <p id="error-message" style="color: red"></p>
+      </div>
+      <button onclick="addStudent()" type="submit" class="btn-add">Thêm</button>
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Điểm</th>
+            <th>Xếp loại</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Minh Đức</td>
+            <td>8</td>
+            <td>Khá</td>
+            <td><button class="btn-remove">Xóa</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Minh Ngọc</td>
+            <td>8.5</td>
+            <td>Giỏi</td>
+            <td><button class="btn-remove">Xóa</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="statistics">
+        <p>Tổng số sinh viên: <span id="total-students">2</span></p>
+        <p>Điểm trung bình: <span id="average-score">8.25</span></p>
+      </div>
+    </div>
+    <script src="/p1/bai1.1/main.js"></script>
+  </body>
+</html>

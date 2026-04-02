@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="head1">
+          <div class="title">HộiThảoHub</div>
+        </div>
+        <div class="head2">
+          <input type="text" placeholder="Tìm kiếm..." class="searchInput" />
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li>Trang chủ</li>
+            <li>Danh sách</li>
+            <li class="nav-bar-active">Thêm mới</li>
+            <li>Giới thiệu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bdk">
+        <p class="p1">Bảng điều khiện hội thảo</p>
+        <p class="p2">Theo dõi lịch, diễn giả và địa điểm các sự kiện.</p>
+      </div>
+      <div class="body">
+        <div class="box1">
+          <div class="box-filter">
+            <label for="boxFilter" style="display: block">Lọc danh sách</label>
+            <input id="boxFilter" type="text" placeholder="Gõ để lọc bảng..." />
+          </div>
+          <div class="box-local">
+            <label for="boxLocal " style="display: block">Địa điểm</label>
+            <select class="selectOption">
+              <option value="">Tất cả</option>
+              <option value="giangDuongA1">Giảng đường A1, Hà Nội</option>
+              <option value="hoiTruongB">Hội trường B, Đà Nẵng</option>
+              <option value="vanPhongTLU">Văn phòng TLU, TP.HCM</option>
+              <option value="trungTamCNTT">Trung Tâm CNTT, Cần Thơ</option>
+              <option value="benhVienDaKhoa">
+                Bệnh viện đa khoa trung ương
+              </option>
+            </select>
+          </div>
+          <button class="add-btn">+ Thêm mới</button>
+        </div>
+        <div class="box2">
+          <table>
+            <thead>
+              <tr>
+                <th>Tên Hội Thảo</th>
+                <th>Diễn Giả</th>
+                <th>Email</th>
+                <th>Ngày tổ chức</th>
+                <th>Địa điểm</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="formInput">
+          <div class="formHeader">
+            <div class="formTitle">Thêm hội thảo mới</div>
+            <div class="close-btn" id="closeBtn">X</div>
+          </div>
+
+          <form class="formBody">
+            <div class="formRow">
+              <div class="boxForm1">
+                <label for="name">Tên hội thảo:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="inputName"
+                />
+                <div class="error errorName"></div>
+
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="inputEmail"
+                />
+                <div class="error errorEmail"></div>
+
+                <label for="local">Địa điểm</label>
+                <input
+                  type="text"
+                  id="local"
+                  name="local"
+                  placeholder="Hội trường / địa chỉ"
+                  class="inputLocal"
+                  required
+                />
+                <div class="error errorLocal"></div>
+              </div>
+
+              <div class="boxForm2">
+                <label for="speaker">Diễn giả:</label>
+                <input
+                  type="text"
+                  id="speaker"
+                  name="speaker"
+                  required
+                  class="inputSpeaker"
+                />
+                <div class="error errorSpeaker"></div>
+                <label for="dob">Ngày tổ chức:</label>
+                <input type="date" id="do" name="do" class="inputDo" required />
+                <div class="error errorDo"></div>
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">Lưu</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="footer1">HộiThảoHub</span>
+        <span class="footer2">2451060645 - 66CNTT1 - Thi CSE391 3-2026</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

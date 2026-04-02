@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
       validateEmail() &&
       validatePhone() &&
       validatePassword() &&
-      validateConfirm() &&
+      validateConfirmPassword() &&
       validateGender();
+    // koko
     if (isValid) {
       let name = document.getElementById("fullname").value;
       document.getElementById("success-message").textContent =
@@ -132,12 +133,12 @@ document
     e.preventDefault();
 
     let isValid =
-      validateFullname() &
-      validateEmail() &
-      validatePhone() &
-      validatePassword() &
-      validateConfirm() &
-      validateGender() &
+      validateFullname() &&
+      validateEmail() &&
+      validatePhone() &&
+      validatePassword() &&
+      validateConfirmPassword() &&
+      validateGender() &&
       validateTerms();
 
     if (isValid) {

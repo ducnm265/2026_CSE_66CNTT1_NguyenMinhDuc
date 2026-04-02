@@ -1,0 +1,44 @@
+{
+  "seminars": [
+    {
+      "id": 1,
+      "name": "Hội thảo Công nghệ AI",
+      "speaker": "Nguyễn Văn A",
+      "email": "nguyenvana@example.com",
+      "date": "2026-05-10",
+      "location": "Giảng đường A1, Hà Nội"
+    },
+    {
+      "id": 2,
+      "name": "Seminar Blockchain",
+      "speaker": "Trần Thị B",
+      "email": "tranthib@example.com",
+      "date": "2026-06-20",
+      "location": "Hội trường B, Đà Nẵng"
+    },
+    {
+      "id": 3,
+      "name": "Seminar Blockchain",
+      "speaker": "Trần Thị c",
+      "email": "tranthib@example.com",
+      "date": "2026-06-20",
+      "location": "Hội trường B, Đà Nẵng"
+    },
+    {
+      "id": 4,
+      "name": "Seminar Blockchain",
+      "speaker": "Trần Thị d",
+      "email": "tranthib@example.com",
+      "date": "2026-06-20",
+      "location": "Hội trường B, Đà Nẵng"
+    },
+    {
+      "id": 5,
+      "name": "Seminar Blockchain",
+      "speaker": "Trần Thị d",
+      "email": "tranthib@example.com",
+      "date": "2026-06-20",
+      "location": "Hội trường B, Đà Nẵng"
+    }
+  ]
+}
